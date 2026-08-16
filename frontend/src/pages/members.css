@@ -1,0 +1,163 @@
+.page {
+  min-height: 100vh;
+  padding: 30px;
+  background: #f5f7fb;
+  box-sizing: border-box;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.page-header h1 {
+  margin: 0 0 5px;
+  font-size: 42px;
+  color: #111827;
+}
+
+.page-header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 18px;
+}
+
+.page-header a {
+  color: #172554;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.content-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.content-box h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.member-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.member-form input {
+  padding: 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.member-form input:focus {
+  outline: none;
+  border-color: #172554;
+}
+
+.save-button {
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background: #172554;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.save-button:hover {
+  background: #1e3a8a;
+}
+
+.cancel-button {
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background: #6b7280;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #f1f5f9;
+}
+
+th,
+td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+  color: #172554;
+}
+
+.edit-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.delete-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #dc2626;
+  color: white;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background: #1d4ed8;
+}
+
+.delete-button:hover {
+  background: #b91c1c;
+}
+
+@media (max-width: 768px) {
+
+  .page {
+    padding: 20px;
+  }
+
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .member-form {
+    grid-template-columns: 1fr;
+  }
+
+  .page-header h1 {
+    font-size: 32px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+}
